@@ -27,6 +27,11 @@ const router = createRouter({
       component: () => import('../views/SuccessView.vue')
     },
     {
+      path: '/categories',
+      name: 'categories',
+      component: () => import('../views/CategoriesView.vue')
+    },
+    {
       path: '/register',
       name: 'register',
       component: RegisterView
@@ -35,6 +40,11 @@ const router = createRouter({
       path: '/product/:id',
       name: 'product',
       component: DetailView
+    },
+    {
+      path: '/categories/:id',
+      name: 'category-items',
+      component: () => import('../views/CategoryItems.vue')
     },
   ]
 })
