@@ -8,9 +8,10 @@ import NavigationLinks from "./NavigationLinks.vue";
 import UserInfo from "./UserInfo.vue";
 
 const userStore = useUserStore()
-const getUser = computed(() => userStore.getUser)
 const isLoggedIn = computed(() => userStore.isLoggedIn)
 const user = computed(() => userStore.user )
+
+const getUser = computed(() => userStore.getUser)
 
 onMounted(() => {
   userStore.fetchUser()
