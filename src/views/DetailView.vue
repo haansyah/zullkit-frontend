@@ -25,7 +25,7 @@ async function getProduct() {
   }
 }
 
-const features = computed(() => {
+const Features = computed(() => {
   return item.value.features.split(",");
 });
 
@@ -94,7 +94,7 @@ onMounted(() => {
               <div>
                 <h1 class="mt-5 mb-3 font-semibold text-md">Great Features</h1>
                 <ul class="mb-6 text-gray-500" v-if="item">
-                  <li class="mb-2" v-for="feature in features" :key="feature">
+                  <li class="mb-2" v-for="feature in Features" :key="feature">
                     {{ feature }}
                     <img
                       src="@/assets/img/icon-check.png"

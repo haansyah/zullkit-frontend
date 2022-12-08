@@ -14,7 +14,7 @@ const user = computed(() => userStore.user )
 const getUser = computed(() => userStore.getUser)
 
 onMounted(() => {
-  userStore.fetchUser()
+  userStore.fetchUser();
 })
 
 </script>

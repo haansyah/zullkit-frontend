@@ -11,7 +11,6 @@ const thumbnail = ref(props.defaultImage)
 function changeImage(image){
   this.thumbnail = image
 }
-
 </script>
 
 <template>
