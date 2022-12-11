@@ -25,7 +25,7 @@ function changeImage(image){
         <template v-for="gallery in galleries" :key="gallery.id">
           <div @click="changeImage(gallery.url)"
             class="overflow-hidden cursor-pointer rounded-2xl"
-            :class="{ 'ring-2 ring-indigo-500': thumbnail == gallery.image }"
+            :class="{ 'ring-2 ring-indigo-500': thumbnail == gallery.url }"
           >
             <img
               :src="gallery.url"
